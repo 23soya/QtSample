@@ -63,6 +63,19 @@
      </rect>
     </property>
    </widget>
+   <widget class="QLabel" name="labeljudge">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>100</y>
+      <width>75</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
