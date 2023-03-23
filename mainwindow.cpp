@@ -6,12 +6,20 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+  ui->setupUi(this);
+
+  // ƒŠƒ“ƒS‰æ‘œ‚ð“ü‚ê‚é
+  applescene = new QGraphicsScene();
+  ui->graphicsView->setScene(applescene);
+  QPixmap pixmap(":/res/fruit_ringo.png");
+  applescene->addPixmap(pixmap);
 }
 
 MainWindow::~MainWindow()
 {
-    delete ui;
+  delete applescene;
+
+  delete ui;
 }
 
 void MainWindow::on_pushButton_Melon_clicked()

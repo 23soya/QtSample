@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QGraphicsScene>
 
 namespace Ui {
 class MainWindow;
@@ -23,7 +24,8 @@ private slots:
     void on_pushButton_Strawbery_clicked();
 
 private:
-    Ui::MainWindow *ui;
+  Ui::MainWindow *ui;
+  QGraphicsScene* applescene;
 };
 
 #endif // MAINWINDOW_H
